@@ -45,14 +45,14 @@ import UIKit
             
             if let slasherContext = UIGraphicsGetCurrentContext() {
                 let whiteTop = CGPoint(x: 200, y: 125)
-                let whiteSideLineLeft = CGPoint(x: 80, y: 240)
-                let whiteSideLineRight = CGPoint(x: 300, y: 240)
+                let whiteSideLineLeft = CGPoint(x: 80, y: 250)
+                let whiteSideLineRight = CGPoint(x: 320, y: 250)
                 
                 slasherContext.move(to: whiteTop)
                 slasherContext.addLine(to: whiteSideLineLeft)
                 slasherContext.move(to: whiteTop)
                 slasherContext.addLine(to: whiteSideLineRight)
-                slasherContext.setLineWidth(15)
+                slasherContext.setLineWidth(13)
                 slasherContext.setStrokeColor(UIColor.white.cgColor)
                 slasherContext.strokePath()
                 
