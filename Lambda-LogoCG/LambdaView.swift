@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable class LambdaView: UIView {
     
-    
+    private let borderWidth: CGFloat = 5.0
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
@@ -43,8 +43,21 @@ import UIKit
             context.setFillColor(UIColor.red.cgColor)
             context.fillPath()
             
-            
-            
+            if let shieldContext = UIGraphicsGetCurrentContext() {
+                let whiteTop = CGPoint(x: 150, y: 125)
+                let whiteSideLineLeft = CGPoint(x: 80, y: 240)
+                let whiteSideLineRight = CGPoint(x: 220, y: 240)
+                
+                shieldContext.move(to: whiteTop)
+                shieldContext.addLine(to: whiteSideLineLeft)
+                shieldContext.move(to: whiteTop)
+                shieldContext.addLine(to: whiteSideLineRight)
+                shieldContext.setLineWidth(15)
+                shieldContext.setStrokeColor(UIColor.white.cgColor)
+                shieldContext.strokePath()
+                
+                
+            }
         }
         
         
