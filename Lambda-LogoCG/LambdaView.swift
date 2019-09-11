@@ -44,9 +44,9 @@ import UIKit
             context.fillPath()
             
             if let slasherContext = UIGraphicsGetCurrentContext() {
-                let whiteTop = CGPoint(x: 150, y: 125)
+                let whiteTop = CGPoint(x: 200, y: 125)
                 let whiteSideLineLeft = CGPoint(x: 80, y: 240)
-                let whiteSideLineRight = CGPoint(x: 220, y: 240)
+                let whiteSideLineRight = CGPoint(x: 300, y: 240)
                 
                 slasherContext.move(to: whiteTop)
                 slasherContext.addLine(to: whiteSideLineLeft)
