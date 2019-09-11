@@ -18,10 +18,10 @@ import UIKit
         if let context = UIGraphicsGetCurrentContext() {
             
             let topPoint = CGPoint(x: 50, y: 100)
-            let bottomPoint = CGPoint(x: 57, y: 300)
+            let bottomPoint = CGPoint(x: 50, y: 300)
             let rightPoint = CGPoint(x: 350, y: 100)
             let middleBottomPoint = CGPoint(x: 200, y: 400)
-            //let rightBottomPoint = CGPoint(x: 250, y: 500)
+            let rightBottomPoint = CGPoint(x: 350, y: 300)
             
             //            let topPoint = CGPoint(x: rect.size.width / 6, y: rect.size.height / 10)
             //            let bottomPoint = CGPoint(x: rect.size.width / 5, y: rect.size.height * 0.75)
@@ -33,9 +33,11 @@ import UIKit
             context.move(to: topPoint)
             context.addLine(to: bottomPoint)
             context.addLine(to: middleBottomPoint)
-            // context.addLine(to: rightBottomPoint)
+            context.addLine(to: rightBottomPoint)
             context.addLine(to: rightPoint)
+            
             context.addLine(to: topPoint)
+            
             
             //Configure the path
             context.setFillColor(UIColor.red.cgColor)
