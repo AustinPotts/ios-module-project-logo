@@ -12,6 +12,7 @@
 		45849315232971F2000EBA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45849313232971F2000EBA15 /* Main.storyboard */; };
 		45849317232971F3000EBA15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45849316232971F3000EBA15 /* Assets.xcassets */; };
 		4584931A232971F3000EBA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45849318232971F3000EBA15 /* LaunchScreen.storyboard */; };
+		45849324232976C7000EBA15 /* LambdaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45849323232976C7000EBA15 /* LambdaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		45849316232971F3000EBA15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45849319232971F3000EBA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4584931B232971F3000EBA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45849323232976C7000EBA15 /* LambdaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		45849303232971F2000EBA15 = {
 			isa = PBXGroup;
 			children = (
+				45849323232976C7000EBA15 /* LambdaView.swift */,
 				4584930E232971F2000EBA15 /* Lambda-LogoCG */,
 				4584930D232971F2000EBA15 /* Products */,
 			);
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45849312232971F2000EBA15 /* ViewController.swift in Sources */,
+				45849324232976C7000EBA15 /* LambdaView.swift in Sources */,
 				45849310232971F2000EBA15 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
