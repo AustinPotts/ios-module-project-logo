@@ -43,18 +43,18 @@ import UIKit
             context.setFillColor(UIColor.red.cgColor)
             context.fillPath()
             
-            if let shieldContext = UIGraphicsGetCurrentContext() {
+            if let slasherContext = UIGraphicsGetCurrentContext() {
                 let whiteTop = CGPoint(x: 150, y: 125)
                 let whiteSideLineLeft = CGPoint(x: 80, y: 240)
                 let whiteSideLineRight = CGPoint(x: 220, y: 240)
                 
-                shieldContext.move(to: whiteTop)
-                shieldContext.addLine(to: whiteSideLineLeft)
-                shieldContext.move(to: whiteTop)
-                shieldContext.addLine(to: whiteSideLineRight)
-                shieldContext.setLineWidth(15)
-                shieldContext.setStrokeColor(UIColor.white.cgColor)
-                shieldContext.strokePath()
+                slasherContext.move(to: whiteTop)
+                slasherContext.addLine(to: whiteSideLineLeft)
+                slasherContext.move(to: whiteTop)
+                slasherContext.addLine(to: whiteSideLineRight)
+                slasherContext.setLineWidth(15)
+                slasherContext.setStrokeColor(UIColor.white.cgColor)
+                slasherContext.strokePath()
                 
                 
             }
